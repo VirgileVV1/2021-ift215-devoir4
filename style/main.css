@@ -182,6 +182,40 @@ overflow: hidden;
    margin: 5% auto 0;
    box-shadow: 8px 5px 5px gray;
 }
+
+
+/***********************- PAGE PANIER -********************/
+.div-container {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+}
+/* partie droite : */
+.sec-listeProduit {
+    height: 1000px;
+    width: 65%;
+}
+.sec-listeProduit h1{
+    color: #696969;
+    font-size: 4em;
+    border: none;
+}
+.sec-listeProduit .div-titreListe{
+    color: #696969;
+    font-size: 2em;
+    border-right-style: groove;
+    border-right-color: #444444;
+    border-left-style: groove;
+    border-left-color: #444444;
+}
+/* partie gauche pour le paiement */
+.sec-paiement {
+    height: 1000px;
+    width: 35%;
+    background-color: blue;
+}
+/*************** fin page panier **************/
+
 footer{
     text-align: center;
     width: 500px;
