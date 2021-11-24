@@ -12,16 +12,13 @@ var router = express.Router();
 
 
 
-router.get('/style/main.css', function(req, res){
-    res.sendFile(path.join(__dirname + '/../client/style/main.css'));
-});
-
 router.get('/', function(req, res){
     res.sendFile(path.join(__dirname + '/../client/accueil.html'));
 });
 
-router.get('/accueil', function(req, res){
-    res.sendFile(path.join(__dirname + '/../client/accueil.html'));
+router.get('/main.css', function(req, res){
+    console.log('oui');
+    res.sendFile(path.join(__dirname + '/../client/style/main.css'));
 });
 
 router.get('/connexion', function(req, res){
@@ -39,5 +36,4 @@ router.get('/points_de_vente', function(req, res){
 router.get('/panier', function(req, res){
     res.sendFile(path.join(__dirname + '/../client/panier.html'));
 });
-
 module.exports = router
