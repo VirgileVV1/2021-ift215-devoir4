@@ -1,0 +1,296 @@
+
+*
+{
+    margin: auto 0;
+}
+
+
+nav.nav-secondaire{
+   text-align: center;
+   background-color: #E1E1E1;
+}
+nav.nav-principal {
+  height: 40px;
+  text-align: center;
+  background-color: white;
+}
+   
+#h1-titre1
+{
+
+   font-size: 60px;
+   padding-top: 200px;
+   font-family: Georgia;
+   padding-right: 800px;
+   color: white;
+   text-shadow: 4px 3px 0px rgb(71, 71, 71), 9px 8px 0px rgba(32, 32, 32, 0.15);
+}
+   
+#h1-titre2
+{
+   font-size: 50px;
+   padding-top: 50px;
+   color: white;
+   font-family: Georgia;
+   padding-left: 400px;
+
+   text-shadow: 4px 3px 0px rgb(95, 92, 92), 9px 8px 0px rgba(32, 32, 32, 0.15);
+
+}
+.div-barreMenu {
+   display: flex;
+   justify-content: end;
+   overflow: hidden;
+   padding-right: 70px;
+}
+.div-barreMenu2 {
+display: flex;
+justify-content: end;
+overflow: hidden;
+   margin-right: 10px;
+}
+.div-barreMenu2 a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.div-barreMenu a {
+   float: left;
+   font-size: 16px;
+   color: black;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   transition: color 0.5s, background-color 0.5s;
+}
+
+.div-deroulant {
+   float: left;
+   overflow: hidden;
+}
+.div-deroulant .btn-deroulant {
+   font-size: 16px;
+   border: none;
+   outline: none;
+   color: black;
+   padding: 14px 16px;
+   background-color: inherit;
+   font-family: inherit;
+   margin: 0;
+   transition: color 0.5s, background-color 0.5s;
+}
+
+.div-barreMenu a:hover, .div-deroulant:hover .btn-deroulant {
+   background-color: #C2C2C2;
+   color: #444444;
+}
+
+.div-sousMenu {
+   display: none;
+   position: absolute;
+   background-color: #444444;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+.div-sousMenu2 {
+    display: none;
+    position: absolute;
+    background-color: #444444;
+    min-width: 160px;
+}
+.div-sousMenu a {
+   float: none;
+   color: aliceblue;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+   transition: color 0.5s, background-color 0.5s;
+}
+
+.div-sousMenu a:hover {
+   background-color: #C2C2C2;
+}
+
+.div-deroulant:hover .div-sousMenu {
+   display: block;
+}
+   .div-deroulant:hover .div-sousMenu2 {
+    display: block;
+}
+
+/**************** IMAGES **************/
+#img-caddi {
+    height : 30px;
+    width : 30px;
+    margin-bottom: 13px;
+
+}
+#img-silhouette {
+    height : 30px;
+    width : 30px;
+    margin-bottom: 15px;
+}
+
+#texte-acceuil, #section-inscription{
+   width: 66%;
+   margin-left: 34%;
+}
+
+#div-corpsPrincipal{
+   margin-bottom: 25px;
+}
+#div-corpsPrincipal h1{
+   text-align: center;
+}
+
+#div-corpsPrincipal
+{
+   background: url(../images/fond.jpg) 50% 50%;
+   background-repeat: no-repeat;
+   margin: auto 0;
+
+}
+.div-partie2
+{
+   background-color: gray;
+   height: 300px;
+   margin: auto 0;
+
+}
+#img-photoPartie2
+{
+   height: 300px;
+   width: 300px;
+   margin-left: 40%;
+   margin-top: 3%;
+}
+.div-partie3
+{
+    background-color: white;
+    height: 300px;
+}
+.div-sousPartie3
+{
+   background-color: #5E97B0;
+   height: 400px;
+   width: 400px;
+   margin: 5% auto 0;
+   box-shadow: 8px 5px 5px gray;
+}
+
+/***********************- PAGE PANIER -********************/
+.div-container {
+   display: flex;
+   justify-content: start;
+   align-items: start;
+   margin: 40px;
+   padding: 0px;
+}
+/* partie gauche : */
+.sec-listeProduit {
+   margin-top: 0%; /*tres important*/
+   height: 100%;
+   width: 69%;
+   margin-right: 5%;
+}
+.sec-listeProduit h1{
+   color: #696969;
+   font-size: 4em;
+   border: none;
+}
+.sec-listeProduit .div-titreListe{
+   color: #696969;
+   font-size: 2em;
+   border-top-style: groove;
+   border-top-color: #444444;
+   border-bottom-style: groove;
+   border-bottom-color: #444444;
+   padding: 1% 1%;
+   display: flex;
+   justify-content: end;
+}
+.sec-listeProduit .div-titreListe p {
+   margin-right: 3%;
+}
+.sec-listeProduit .div-liste {
+   height: 200px; /*taille au hasard de la liste*/
+   margin-top: 2%;
+}
+
+/* partie droite pour le paiement */
+.sec-paiement {
+   margin-top: 0%; /*tres important*/
+   background-color: #E1E1E1;
+   width: 29%;
+   /*border-color: #444444;
+   border-style: ridge;
+   border-radius: 5%;*/
+   padding: 2%;
+}
+
+.sec-paiement .div-paiement {
+   font-size: 2em;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin: 5%;
+}
+.sec-paiement .div-paiement .p-code {
+   margin-bottom: 6%;
+}
+.sec-paiement .div-paiement .in-code {
+   font-size: 0.8em;
+   width: 100%;
+   margin-bottom: 2%;
+}
+.sec-paiement .div-paiement .btn-ajouter {
+   display: flex;
+   align-self: end;
+   font-weight: 700;
+   font-size: 0.5em;
+   color: #999999;
+   background-color: black;
+   border-radius: 15px;
+   padding: 2% 7%;
+   border-color: black;
+   border-style: solid;
+}
+.sec-paiement .div-paiement .btn-ajouter:hover {
+   background-color: whitesmoke;
+}
+.sec-paiement .div-paiement .div-affichagePrix {
+   margin: 10% 10%;
+   background-color: white;
+   width: 100%;
+   height: 110px;
+}
+.sec-paiement .btn-commander {
+   font-weight: 700;
+   font-size: 1.4em;
+   color: #999999;
+   background-color: black;
+   border-radius: 15px;
+   padding: 2% 8%;
+   border-color: black;
+   border-style: solid;
+   width: 100%;
+}
+.sec-paiement .btn-commander:hover {
+   background-color: whitesmoke;
+}
+
+/*************** fin page panier **************/
+
+footer{
+    text-align: center;
+    width: 80%;
+    padding: 20px;
+    clear: both;
+    padding-left: 30px;
+    padding-top: 50px;
+}
