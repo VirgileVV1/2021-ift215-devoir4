@@ -192,7 +192,8 @@ overflow: hidden;
 /* partie droite : */
 .sec-listeProduit {
    height: 1000px;
-   width: 65%;
+   width: 70%;
+   margin-right: 5%;
 }
 .sec-listeProduit h1{
    color: #696969;
@@ -202,16 +203,82 @@ overflow: hidden;
 .sec-listeProduit .div-titreListe{
    color: #696969;
    font-size: 2em;
-   border-right-style: groove;
-   border-right-color: #444444;
-   border-left-style: groove;
-   border-left-color: #444444;
+   border-top-style: groove;
+   border-top-color: #444444;
+   border-bottom-style: groove;
+   border-bottom-color: #444444;
+   padding: 1% 1%;
+   display: flex;
+   justify-content: end;
 }
+.sec-listeProduit .div-titreListe p {
+   margin-right: 3%;
+}
+.sec-listeProduit .div-liste {
+   height: 10px;
+   margin-top: 2%;
+}
+
 /* partie gauche pour le paiement */
 .sec-paiement {
-   height: 1000px;
-   width: 35%;
-   background-color: blue;
+   height: 1000px; /*a enlever*/
+   background-color: #E1E1E1;
+   width: 30%;
+   /*border-color: #444444;
+   border-style: ridge;
+   border-radius: 5%;*/
+   padding: 2%;
+}
+
+.sec-paiement .div-paiement {
+   font-size: 2em;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin: 5%;
+}
+.sec-paiement .div-paiement .p-code {
+   margin-bottom: 6%;
+}
+.sec-paiement .div-paiement .in-code {
+   font-size: 0.8em;
+   width: 100%;
+   margin-bottom: 2%;
+}
+.sec-paiement .div-paiement .btn-ajouter {
+   display: flex;
+   align-self: end;
+   font-weight: 700;
+   font-size: 0.5em;
+   color: #999999;
+   background-color: black;
+   border-radius: 15px;
+   padding: 2% 7%;
+   border-color: black;
+   border-style: solid;
+}
+.sec-paiement .div-paiement .btn-ajouter:hover {
+   background-color: whitesmoke;
+}
+.sec-paiement .div-paiement .div-affichagePrix {
+   margin: 10% 10%;
+   background-color: white;
+   width: 100%;
+   height: 110px;
+}
+.sec-paiement .btn-commander {
+   font-weight: 700;
+   font-size: 1.4em;
+   color: #999999;
+   background-color: black;
+   border-radius: 15px;
+   padding: 2% 8%;
+   border-color: black;
+   border-style: solid;
+   width: 100%;
+}
+.sec-paiement .btn-commander:hover {
+   background-color: whitesmoke;
 }
 
 /*************** fin page panier **************/
