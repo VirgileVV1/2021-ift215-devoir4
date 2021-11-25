@@ -4,6 +4,9 @@
     margin: auto 0;
 }
 
+#corps-principal{
+   background-color: antiquewhite;
+}
 
 nav.nav-secondaire{
    text-align: center;
@@ -289,8 +292,81 @@ overflow: hidden;
 footer{
     text-align: center;
     width: 80%;
-    padding: 20px;
     clear: both;
-    padding-left: 30px;
-    padding-top: 50px;
+   margin: auto;
+   padding: 20px;
 }
+
+/*************** liste des produits **************/
+#recherche{
+   text-align: right;
+   padding-right: 15px;
+}
+
+#liste-produits-grille {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   justify-content: space-between;
+   grid-row-gap: 25px;
+   margin-right: 25px;
+   margin-bottom: 25px;
+   padding: 15px;
+}
+
+.liste-produit-item {
+   border: 1px solid rgba(0,0,0,0.8);
+   padding: 15px;
+   text-align: center;
+   width: 350px;
+   height: 350px;
+   background-color: white;
+}
+
+.liste-produit-item h2{
+   font-size: x-large;
+   text-align: left;
+}
+
+.liste-produit-item h3{
+   font-size: medium;
+   text-align: left;
+}
+
+#prix{
+   float: left;
+}
+
+#image-produit{
+   height: 200px;
+}
+
+#ajout-caddi{
+   height: 50px;
+   float: right;
+}
+
+.center{
+   text-align: center;
+}
+
+.Pagination{
+   display: inline-block;
+   padding: 5px;
+}
+
+.Pagination a {
+   color: black;
+   float: left;
+   padding: 8px 16px;
+   text-decoration: none;
+   transition: background-color .3s;
+}
+
+/* Style the active/current link */
+.Pagination a.active {
+   background-color: gray;
+   color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.Pagination a:hover:not(.active) {background-color: #ddd;}

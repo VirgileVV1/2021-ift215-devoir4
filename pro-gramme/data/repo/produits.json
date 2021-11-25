@@ -1,41 +1,93 @@
 [
     {
         "id": 0,
-        "serial": "we23545",
-        "nom": "Banane",
-        "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments",
-        "prix": 24.76,
+        "serial": "NUT232",
+        "nom": "Nutriscore 2000",
+        "description": "Complément alimentaire pour sportif.",
+        "prix": 12.99,
         "qte_inventaire": 164,
         "categorie": {
             "id": 1,
-            "nom": "Prunier",
-            "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
+            "nom": "Nutritif",
+            "description": "Produits alimentaire"
         }
     },
     {
         "id": 1,
-        "serial": "we23545",
-        "nom": "Tomate",
-        "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments",
-        "prix": 24.76,
+        "serial": "SPO821",
+        "nom": "Tapis de course",
+        "description": "Tapis de course pour s'entraîner.",
+        "prix": 240.76,
         "qte_inventaire": 41,
         "categorie": {
             "id": 2,
-            "nom": "Banane",
-            "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
+            "nom": "Equipement sportif",
+            "description": "Matériel pour l'entraînement sportif"
         }
     },
     {
         "id": 2,
-        "serial": "sdfds",
-        "nom": "concombre",
-        "description": "pas un jouet",
-        "prix": 2.23,
-        "qte_inventaire": 50,
+        "serial": "PRO376",
+        "nom": "Programme expert",
+        "description": "Programme d'entraînement pour sportif expérimenté, prix au mois.",
+        "prix": 50.67,
+        "qte_inventaire": 20,
+        "categorie": {
+            "id": 3,
+            "nom": "Programme",
+            "description": "Nos programmes sportifs"
+        }
+    },
+    {
+        "id": 3,
+        "serial": "NUT233",
+        "nom": "Nutriscore 3000",
+        "description": "Complément alimentaire pour sportif.",
+        "prix": 22.99,
+        "qte_inventaire": 124,
         "categorie": {
             "id": 1,
-            "nom": "Prunier",
-            "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
+            "nom": "Nutritif",
+            "description": "Produits alimentaire"
+        }
+    },
+    {
+        "id": 4,
+        "serial": "NUT262",
+        "nom": "Barres énergétiques",
+        "description": "Barres de céréales idéal lors des entraînements.",
+        "prix": 6.99,
+        "qte_inventaire": 364,
+        "categorie": {
+            "id": 1,
+            "nom": "Nutritif",
+            "description": "Produits alimentaire"
+        }
+    },
+    {
+        "id": 5,
+        "serial": "PRO377",
+        "nom": "Programme intermédiaire",
+        "description": "Programme d'entraînement pour sportif, prix au mois.",
+        "prix": 30.67,
+        "qte_inventaire": 20,
+        "categorie": {
+            "id": 3,
+            "nom": "Programme",
+            "description": "Nos programmes sportifs"
+        }
+    },
+    {
+        "id": 6,
+        "serial": "PRO374",
+        "nom": "Programme débutant",
+        "description": "Programme d'entraînement pour sportif débutant, prix au mois.",
+        "prix": 20.67,
+        "qte_inventaire": 20,
+        "categorie": {
+            "id": 3,
+            "nom": "Programme",
+            "description": "Nos programmes sportifs"
         }
     }
 ]
