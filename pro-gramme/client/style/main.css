@@ -5,7 +5,7 @@
 }
 
 #corps-principal{
-   background-color: antiquewhite;
+   /*background-color: antiquewhite;*/ /* ne modifiez pas cette div, elle est commune a toutes nos pages*/ 
 }
 
 nav.nav-secondaire{
@@ -303,7 +303,6 @@ overflow: hidden;
    align-items: center;
 }
 .sec-i {
-   background-color: purple;
    font-family: Georgia;
    display: flex;
    flex-direction: column;
@@ -321,31 +320,111 @@ overflow: hidden;
    padding: 0vh 3vw 0vh 3vw;
 }
 .sec-i .group input{
-   font-size: 120%;
+   font-size: 1.5vw;
    margin-top: 3vh;
    border: none;
-   border-radius: 20px;
+   border-radius: 10px;
    width: 18vw;
-   height: 4vh;
+   height: 5vh;
 }
 ::-webkit-input-placeholder { text-align:center; }
+
+.sec-i .group-submit {
+   display: flex;
+   justify-content: center;
+}
 
 .sec-i .in-submit {
    font-weight: 500;
    font-size: 150%;
    color: #999999;
    background-color: black;
-   border-radius: 15px;
+   border-radius: 20px;
    padding: 2% 8%;
    border-color: black;
    border-style: solid;
-   width: 100%;
+   width: 60%;
    margin: 6vh 0vh 0vh 0vh;
 }
 .sec-i .in-submit:hover {
    background-color: whitesmoke;
 }
 /*************** fin page inscription *********/
+
+/*************** page paiement ****************/
+
+#sec-livraison {
+   
+}
+
+#sec-livraison h1 {
+   font-size: 3.5 em;
+   padding-left: 10vw;
+}
+#sec-livraison #div-containImg {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 10px;
+   margin: 10px;
+}
+#sec-livraison #div-containImg #div-img12 {
+   display: flex;
+   flex-direction: row;
+   border-bottom: black;
+   border-bottom-width: 2px;
+   border-bottom-style: solid;
+}
+#sec-livraison #div-containImg #div-img34 {   
+   display: flex;
+   flex-direction: row;
+   border-top: black;   
+   border-top-width: 2px;
+   border-top-style: solid;
+}
+#img-dom {
+   border-color: white;
+   border-width: 4px;
+   border-style: solid;
+   border-right-color: black;
+   border-right-width: 2px;
+}
+#img-rel {
+   border-color: white;
+   border-width: 4px;
+   border-style: solid;
+   border-left-color: black;
+   border-left-width: 2px;
+}
+#img-exp {
+   border-color: white;
+   border-width: 4px;
+   border-style: solid;
+   border-right-color: black;
+   border-right-width: 2px;
+}
+#img-mag {
+   border-color: white;
+   border-width: 4px;
+   border-style: solid;
+   border-left-color: black;
+   border-left-width: 2px;
+}
+#sec-livraison #div-containImg img  {
+   padding: 15px;
+   width: 10vw;
+   aspect-ratio: 1/1;
+}
+#sec-livraison #div-containImg img:hover  {
+   transform: scale(1.2);
+   transition: transform 1.2s;
+}
+
+    
+
+/*************** fin page paiement ************/
+
 footer{
     text-align: center;
     width: 80%;

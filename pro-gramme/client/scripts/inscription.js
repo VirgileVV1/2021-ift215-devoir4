@@ -1,11 +1,4 @@
-function menuGaucheClic(lien){
-    let menu = document.getElementById('menu-gauche');
-    let liens = menu.children;
-    for (let i = 0 ; i<liens.length ; i++){
-        liens[i].classList.remove("choisi")
-    }
-    lien.classList.add("choisi");
-}
+
 
 function attacherListenerMenuGauche(){
     let menu = document.getElementById("menu-gauche");
