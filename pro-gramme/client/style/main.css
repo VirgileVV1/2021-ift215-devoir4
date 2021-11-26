@@ -354,12 +354,14 @@ overflow: hidden;
 /*************** page paiement ****************/
 
 #sec-livraison {
-   
+   height: 88 vh;
 }
 
 #sec-livraison h1 {
-   font-size: 3.5 em;
+   font-size: 3em;
    padding-left: 10vw;
+   padding-top: 4vh;
+   color: #696969;
 }
 #sec-livraison #div-containImg {
    display: flex;
@@ -368,52 +370,71 @@ overflow: hidden;
    flex-direction: column;
    padding: 10px;
    margin: 10px;
+   color: #696969;
 }
 #sec-livraison #div-containImg #div-img12 {
    display: flex;
    flex-direction: row;
-   border-bottom: black;
+   /*border-bottom: black;
    border-bottom-width: 2px;
-   border-bottom-style: solid;
+   border-bottom-style: solid;*/
+}
+#sec-livraison #div-containImg #div-img12 h2 {   
+   display: flex;
+   justify-content: center;
+   margin-top: 3vh;
 }
 #sec-livraison #div-containImg #div-img34 {   
    display: flex;
    flex-direction: row;
-   border-top: black;   
+   /*border-top: black;   
    border-top-width: 2px;
-   border-top-style: solid;
+   border-top-style: solid;*/
+}
+#sec-livraison #div-containImg #div-img34 h2 {   
+   display: flex;
+   justify-content: center;
+   margin-top: 3vh;
 }
 #img-dom {
    border-color: white;
-   border-width: 4px;
+   border-width: 2px;
    border-style: solid;
    border-right-color: black;
-   border-right-width: 2px;
+   border-right-width: 1px;
+   border-bottom-color: black;
+   border-bottom-width: 1px;
 }
 #img-rel {
    border-color: white;
-   border-width: 4px;
+   border-width: 2px;
    border-style: solid;
    border-left-color: black;
-   border-left-width: 2px;
+   border-left-width: 1px;
+   border-bottom-color: black;
+   border-bottom-width: 1px;
 }
 #img-exp {
    border-color: white;
-   border-width: 4px;
+   border-width: 2px;
    border-style: solid;
    border-right-color: black;
-   border-right-width: 2px;
+   border-right-width: 1px;
+   border-top-color: black;
+   border-top-width: 1px;
 }
 #img-mag {
    border-color: white;
-   border-width: 4px;
+   border-width: 2px;
    border-style: solid;
    border-left-color: black;
-   border-left-width: 2px;
+   border-left-width: 1px;
+   border-top-color: black;
+   border-top-width: 1px;
 }
 #sec-livraison #div-containImg img  {
-   padding: 15px;
-   width: 10vw;
+   padding: 2vw 5vw;
+   width: 8vw;
    aspect-ratio: 1/1;
 }
 #sec-livraison #div-containImg img:hover  {

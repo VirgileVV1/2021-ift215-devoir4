@@ -38,19 +38,19 @@ function mag() {
 }
 function setBorderT() { //top
     document.getElementById(IMGID).style.borderTopColor = "black";
-    document.getElementById(IMGID).style.borderTopWidth= "4px";
+    document.getElementById(IMGID).style.borderTopWidth= "2px";
 }
 function setBorderB() { //bottom
     document.getElementById(IMGID).style.borderBottomColor = "black";
-    document.getElementById(IMGID).style.borderBottomWidth= "4px";
+    document.getElementById(IMGID).style.borderBottomWidth= "2px";
 }
 function setBorderR() { //right
     document.getElementById(IMGID).style.borderRightColor = "black";
-    document.getElementById(IMGID).style.borderRightWidth= "4px";
+    document.getElementById(IMGID).style.borderRightWidth= "2px";
 }
 function setBorderL() { //left
     document.getElementById(IMGID).style.borderLeftColor = "black";
-    document.getElementById(IMGID).style.borderLeftWidth= "4px";    
+    document.getElementById(IMGID).style.borderLeftWidth= "2px";    
 }
 function delAllBorder() {   
     document.getElementById('img-mag').style.borderRightColor = "white";
