@@ -57,3 +57,8 @@ async function hashHandler() {
 
 //La navigation se fait en utilisant les hash. Il faut donc surveiller l'événement qui dit que le hash a changé.
 window.addEventListener('hashchange', hashHandler, false);
+
+/* on met ici toutes les fonctions de redirection */
+function redirectionPaiement() {
+    window.location.href = "./#/paiement"
+}
