@@ -9,18 +9,17 @@
 }
 
 nav.nav-secondaire{
+   height: 9vh;
    text-align: center;
    background-color: #E1E1E1;
 }
 nav.nav-principal {
-  height: 40px;
+  height: 7vh;
   text-align: center;
   background-color: white;
 }
-   
 #h1-titre1
 {
-
    font-size: 60px;
    padding-top: 200px;
    font-family: Georgia;
@@ -28,7 +27,6 @@ nav.nav-principal {
    color: white;
    text-shadow: 4px 3px 0px rgb(71, 71, 71), 9px 8px 0px rgba(32, 32, 32, 0.15);
 }
-   
 #h1-titre2
 {
    font-size: 50px;
@@ -41,52 +39,72 @@ nav.nav-principal {
 
 }
 .div-barreMenu {
-   display: flex;
-   justify-content: end;
-   overflow: hidden;
-   padding-right: 70px;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
 }
 .div-barreMenu2 {
-display: flex;
-justify-content: end;
-overflow: hidden;
-   margin-right: 10px;
+   display:flex;
+   align-items: center;
+   justify-content: end;
+   height: 100%;
 }
-/* pk yen a 2 pareil ?*/
 .div-barreMenu2 a {
-    float: left;
-    font-size: 16px;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+   display: flex;
+   align-items: center;
+   font-size: 16px;
+   color: black;
+   text-decoration: none;
+   padding-left:  30px;
+   padding-right: 30px;
+   height: 100%;
+   transition: color 0.5s, background-color 0.5s;
 }
-.div-barreMenu a {
+.div-deroulant {
    float: left;
    font-size: 16px;
    color: black;
    text-align: center;
-   padding: 14px 16px;
+   padding-bottom: 8px;
    text-decoration: none;
    transition: color 0.5s, background-color 0.5s;
 }
 
-.div-deroulant {
+.div-barreMenu a {
+   display: flex;
+   align-items: center;
    float: left;
-   overflow: hidden;
-}
-.div-deroulant .btn-deroulant {
    font-size: 16px;
-   border: none;
-   outline: none;
    color: black;
-   padding: 14px 16px;
-   background-color: inherit;
-   font-family: inherit;
-   margin: 0;
+   text-align: center;
+   padding-left:  30px;
+   padding-right: 30px;
+   height: 100%;
+   text-decoration: none;
    transition: color 0.5s, background-color 0.5s;
 }
 
+.div-deroulant .btn-deroulant {
+   border: none;
+   outline: none;
+   padding: 14px 16px;
+   background-color: inherit;
+   font-family: inherit;
+   transition: color 0.5s, background-color 0.5s;
+}
+@media screen and (max-width: 1000px){
+   nav.nav-secondaire{
+      height: 9vh;
+      text-align: center;
+   }
+   nav.nav-principal {
+      height: 7vh;
+      text-align: center;
+      background-color: white;
+   }
+
+}
 .div-barreMenu a:hover, .div-deroulant:hover .btn-deroulant {
    background-color: #C2C2C2;
    color: #444444;
@@ -126,20 +144,25 @@ overflow: hidden;
    .div-deroulant:hover .div-sousMenu2 {
     display: block;
 }
+.div-barreMenu2 a:hover, .div-deroulant:hover .btn-deroulant {
+   background-color: #C2C2C2;
+   color: #444444;
 
+}
 /**************** IMAGES **************/
 #img-caddi {
-    height : 30px;
-    width : 30px;
-    margin-bottom: 13px;
-
+    height : 25px;
+    width : 25px;
 }
+
 #img-silhouette {
-    height : 30px;
-    width : 30px;
-    margin-bottom: 15px;
+    height : 25px;
+    width : 25px;
 }
-
+.div-photos
+{
+   margin-bottom: 10px;
+}
 #texte-acceuil, #section-inscription{
    width: 66%;
    margin-left: 34%;
@@ -154,24 +177,27 @@ overflow: hidden;
 
 #div-corpsPrincipal
 {
-   background: url(../images/fond.jpg) 50% 50%;
+
+   background: url(../images/haltere.jpg) ;
    background-repeat: no-repeat;
-   margin: auto 0;
+   background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+#div-Principal
+{
 
 }
 .div-partie2
 {
    background-color: gray;
    height: 300px;
-   margin: auto 0;
-
 }
 #img-photoPartie2
 {
-   height: 300px;
-   width: 300px;
+   height: 250px;
+   width: 250px;
    margin-left: 40%;
-   margin-top: 3%;
+   margin-top:3%;
 }
 .div-partie3
 {
@@ -186,7 +212,10 @@ overflow: hidden;
    margin: 5% auto 0;
    box-shadow: 8px 5px 5px gray;
 }
-
+#div-Principal
+{
+   height: 1500px;
+}
 /***********************- PAGE PANIER -********************/
 .div-container {
    display: flex;
@@ -354,7 +383,7 @@ overflow: hidden;
 /*************** page paiement ****************/
 
 #sec-livraison {
-   height: 88 vh;
+   height: 88vh;
 }
 
 #sec-livraison h1 {
@@ -450,8 +479,6 @@ footer{
     text-align: center;
     width: 80%;
     clear: both;
-   margin: auto;
-   padding: 20px;
 }
 
 /*************** liste des produits **************/
