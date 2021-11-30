@@ -340,11 +340,17 @@ nav.nav-principal {
    background-color: rgb(223, 181, 167);
   /* margin: 0vh 30vw 0vh 30vw;*/
    height: 70vh;
-   width: 32vw;
+   width: 30vw;
    border-radius: 20px;
 }
+@media screen and (max-width: 1100px ) {
+   .sec-i {
+      width: 55vw;
+   }
+}
 .sec-i .h1-titre{
-   font-size: 350%;
+   font-weight: 1000;
+   font-size: 300%;
    letter-spacing: 2px;
    padding: 0vh 3vw 0vh 3vw;
 }
@@ -378,7 +384,68 @@ nav.nav-principal {
 .sec-i .in-submit:hover {
    background-color: whitesmoke;
 }
+
+.sec-i .div-connexion {
+   margin: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 /*************** fin page inscription *********/
+
+
+/*************** page connexion ****************/
+.sec-c form {
+   margin-bottom: 15vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.sec-c h1 {
+   margin-top: 12vh;
+   margin-bottom: 8vh;
+}
+
+.sec-c {
+   font-family: Georgia;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: rgb(223, 181, 167);
+  /* margin: 0vh 30vw 0vh 30vw;*/
+   height: 55vh;
+   width: 30vw;
+   border-radius: 20px;
+}
+@media screen and (max-width: 1100px ) {
+   .sec-c {
+      width: 55vw;
+
+   }
+}
+.sec-i .in-submit-connexion {
+   font-weight: 500;
+   font-size: 100%;
+   color: #999999;
+   background-color: black;
+   border-radius: 20px;
+   padding: 2% 8%;
+   border-color: black;
+   border-style: solid;
+   width: 12vw;
+   height: 4vh;
+   margin: 6vh 0vh 0vh 0vh;
+}
+.sec-i .in-submit-connexion:hover {
+   background-color: whitesmoke;
+}
+
+
+/*************** fin page connexion *********/
+
 
 /*************** page paiement ****************/
 
