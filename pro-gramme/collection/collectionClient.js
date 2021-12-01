@@ -210,7 +210,7 @@ class CollectionClient {
   recuperePanier (idClient, idItem) {
     const clientIndex = this.getClientIndex(idClient);
     if (idItem >= 0) {
-      const itemIndex = this.liste_clients[clientIndex].panier.items.findIndex(obj => obj.id === idItem);
+      const itemIndex = this.liste_clients[clientIndex].panier.items.findIndex(obj => obj.idProduit === idItem);
       return this.liste_clients[clientIndex].panier.items[itemIndex];
     }
     return this.liste_clients[clientIndex].panier;

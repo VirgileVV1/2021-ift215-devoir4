@@ -18,7 +18,7 @@
         "nom": "Tapis de course",
         "description": "Tapis de course pour s'entraîner.",
         "prix": 240.76,
-        "qte_inventaire": 41,
+        "qte_inventaire": 37,
         "categorie": {
             "id": 2,
             "nom": "Equipement sportif",
@@ -79,6 +79,84 @@
     },
     {
         "id": 6,
+        "serial": "PRO374",
+        "nom": "Programme débutant",
+        "description": "Programme d'entraînement pour sportif débutant, prix au mois.",
+        "prix": 20.67,
+        "qte_inventaire": 20,
+        "categorie": {
+            "id": 3,
+            "nom": "Programme",
+            "description": "Nos programmes sportifs"
+        }
+    },
+    {
+        "id": 7,
+        "serial": "PRO374",
+        "nom": "Programme débutant",
+        "description": "Programme d'entraînement pour sportif débutant, prix au mois.",
+        "prix": 20.67,
+        "qte_inventaire": 20,
+        "categorie": {
+            "id": 3,
+            "nom": "Programme",
+            "description": "Nos programmes sportifs"
+        }
+    },
+    {
+        "id": 8,
+        "serial": "PRO374",
+        "nom": "Programme débutant",
+        "description": "Programme d'entraînement pour sportif débutant, prix au mois.",
+        "prix": 20.67,
+        "qte_inventaire": 20,
+        "categorie": {
+            "id": 3,
+            "nom": "Programme",
+            "description": "Nos programmes sportifs"
+        }
+    },
+    {
+        "id": 9,
+        "serial": "PRO374",
+        "nom": "Programme débutant",
+        "description": "Programme d'entraînement pour sportif débutant, prix au mois.",
+        "prix": 20.67,
+        "qte_inventaire": 20,
+        "categorie": {
+            "id": 3,
+            "nom": "Programme",
+            "description": "Nos programmes sportifs"
+        }
+    },
+    {
+        "id": 10,
+        "serial": "PRO374",
+        "nom": "Programme débutant*",
+        "description": "Programme d'entraînement pour sportif débutant, prix au mois.",
+        "prix": 20.67,
+        "qte_inventaire": 20,
+        "categorie": {
+            "id": 3,
+            "nom": "Programme",
+            "description": "Nos programmes sportifs"
+        }
+    },
+    {
+        "id": 11,
+        "serial": "PRO374",
+        "nom": "Programme débutant",
+        "description": "Programme d'entraînement pour sportif débutant, prix au mois.",
+        "prix": 20.67,
+        "qte_inventaire": 20,
+        "categorie": {
+            "id": 3,
+            "nom": "Programme",
+            "description": "Nos programmes sportifs"
+        }
+    },
+    {
+        "id": 12,
         "serial": "PRO374",
         "nom": "Programme débutant",
         "description": "Programme d'entraînement pour sportif débutant, prix au mois.",

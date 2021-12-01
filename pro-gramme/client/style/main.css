@@ -529,6 +529,7 @@ footer{
    float: right;
 }
 
+/************* Pagination ********************/
 .center{
    text-align: center;
 }
@@ -538,7 +539,7 @@ footer{
    padding: 5px;
 }
 
-.Pagination a {
+.Pagination button {
    color: black;
    float: left;
    padding: 8px 16px;
@@ -547,10 +548,10 @@ footer{
 }
 
 /* Style the active/current link */
-.Pagination a.active {
+.Pagination button.active {
    background-color: gray;
    color: white;
 }
 
 /* Add a grey background color on mouse-over */
-.Pagination a:hover:not(.active) {background-color: #ddd;}
+.Pagination button:hover:not(.active) {background-color: #ddd;}
