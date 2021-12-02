@@ -355,7 +355,7 @@ a:hover::after {
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   background-color: rgb(223, 181, 167);
+   background-color: #F9AB4D;/*rgb(223, 181, 167);*/
   /* margin: 0vh 30vw 0vh 30vw;*/
    height: 70vh;
    width: 30vw;
