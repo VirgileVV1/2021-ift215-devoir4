@@ -18,3 +18,34 @@ function attacherListenerMenuGauche(){
 async function chargerinscription (){
     attacherListenerMenuGauche()
 }
+
+function inscription() {
+    const formulaire = new FormData(document.getElementById('form-inscription'));
+    const corps = JSON.stringify(Object.fromEntries(formulaire));
+    const init = {
+        method: 'POST',
+        body: corps,
+        headers: { 'Content-type': 'application/json; charset=UTF-8' }
+    };
+    fetch('/clients', init)
+        .then(reponse => {
+            if (reponse.ok) {
+                return reponse.json();
+            } else {
+                return reponse.text();
+            }
+        })
+        .then(json => {
+            if (typeof json === 'object' && json !== null) {
+                console.log('Reussi');
+                afficherMessage('Inscription réussie!', 'positif');
+            } else {
+                console.log(json);
+                afficherMessage(`Erreur: ${json}`, 'negatif');
+            }
+        })
+        .catch(err => {
+            console.log(err);
+        });
+
+}
