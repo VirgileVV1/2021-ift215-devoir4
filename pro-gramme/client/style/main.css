@@ -1,4 +1,5 @@
-
+/*#f7a036 couleur orange qui souligne les bouton du header */
+/*#F9AB4D couleur orange en background des pages connexion inscription...*/
 *
 {
     margin: auto 0;
@@ -71,18 +72,35 @@ nav.nav-principal {
    transition: color 0.5s, background-color 0.5s;
 }
 
+/* header 2*/
 .div-barreMenu a {
+   position: relative;
    display: flex;
    align-items: center;
    float: left;
    font-size: 16px;
    color: black;
-   text-align: center;
+   text-align: cent  er;
    padding-left:  30px;
    padding-right: 30px;
    height: 100%;
    text-decoration: none;
    transition: color 0.5s, background-color 0.5s;
+   /*background-color: red;*/
+}
+.div-barreMenu a:after {
+   font-size: 0;
+   content: "";
+   position: absolute;
+   background-color: #f7a036;
+   height: 3px;
+   width: 0;
+   left: 10%;
+   bottom: 15%;
+   transition: 0.3s;
+}
+a:hover::after {
+   width: 80%;
 }
 
 .div-deroulant .btn-deroulant {
@@ -337,20 +355,15 @@ nav.nav-principal {
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   background-color: rgb(223, 181, 167);
+   background-color: #F9AB4D;/*rgb(223, 181, 167);*/
   /* margin: 0vh 30vw 0vh 30vw;*/
    height: 70vh;
    width: 30vw;
    border-radius: 20px;
 }
-@media screen and (max-width: 1100px ) {
-   .sec-i {
-      width: 55vw;
-   }
-}
 .sec-i .h1-titre{
    font-weight: 1000;
-   font-size: 300%;
+   font-size: 4vw;
    letter-spacing: 2px;
    padding: 0vh 3vw 0vh 3vw;
 }
@@ -391,6 +404,16 @@ nav.nav-principal {
    justify-content: center;
    align-items: center;
 }
+/*responsive*/
+@media screen and (max-width: 1100px ) {
+   .sec-i {
+      width: 55vw;
+   }
+   .sec-i .h1-titre{
+      font-size: 6vw;
+   }
+}
+
 /*************** fin page inscription *********/
 
 
@@ -402,24 +425,32 @@ nav.nav-principal {
    align-items: center;
    justify-content: center;
 }
-
-.sec-c h1 {
-   margin-top: 12vh;
-   margin-bottom: 8vh;
-}
-
 .sec-c {
    font-family: Georgia;
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   background-color: rgb(223, 181, 167);
+   background-color: #f9ab4d; /*rgb(223, 181, 167);*/
   /* margin: 0vh 30vw 0vh 30vw;*/
-   height: 55vh;
+   height: 60vh;
    width: 30vw;
    border-radius: 20px;
 }
+
+.sec-c h1 {
+   margin-top: 12vh;
+   margin-bottom: 8vh;
+}
+
+.sec-c #erreur-i {
+   font-weight: bold;
+   color: red;
+   margin-left: 1vw;
+   margin-right: 1vw;
+   font-size: 0.8vw;
+}
+
 @media screen and (max-width: 1100px ) {
    .sec-c {
       width: 55vw;
@@ -428,15 +459,15 @@ nav.nav-principal {
 }
 .sec-i .in-submit-connexion {
    font-weight: 500;
-   font-size: 100%;
+   font-size: 150%;
    color: #999999;
    background-color: black;
    border-radius: 20px;
    padding: 2% 8%;
    border-color: black;
    border-style: solid;
-   width: 12vw;
-   height: 4vh;
+   /*width: 12vw;
+   height: 4vh;*/
    margin: 6vh 0vh 0vh 0vh;
 }
 .sec-i .in-submit-connexion:hover {
