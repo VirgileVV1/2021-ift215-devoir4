@@ -35,27 +35,31 @@ function chargerlisteProduits (){
         .then(data => genererListe(data, 1) )
 }
 
-// à faire quand connexion/inscription fini
 function ajoutCaddi(indice){
-    // savoir si le client est connecter
-
-    let corps = {
-        "idProduit": indice,
-        "quantite": 1
+    if(usager) {
+        const corps = { 'idProduit': indice, 'quantite': 1 };
+        console.log(corps);
+        const init = {
+            method: 'POST',
+            body: JSON.stringify(corps),
+            headers: {'Content-type': 'application/json; charset=UTF-8'}
+        };
+        let input = '/clients/' + usager.id + '/panier';
+        fetch(input, init)
+            .then(reponse => {
+                return reponse.json();
+            })
+            .then(json => {
+                const token = json.token;
+                console.log(token);
+            })
+            .catch(function(err) {
+                console.error(err)
+            });
+    } else {
+        console.log("pas connecter");
+        //mettre un message visible par le client
     }
-    const init = {
-        method: 'POST',
-        body: corps,
-        headers: { 'Content-type': 'application/json; charset=UTF-8' }
-    };
-    fetch('/clients/'+window.usager.idClient+'/panier', init)
-        .then(reponse => {
-            return reponse.json();
-        })
-        .then(json => {
-            const token = json.token;
-            console.log(token);
-        });
 }
 
 /* Pagination */

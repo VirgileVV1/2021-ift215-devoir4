@@ -57,7 +57,7 @@
         "courriel": "asdf@erds.com",
         "mdp": "$2b$08$KFhVxDPD7lDxHvPKdKcRou2E4rvalgmv78v/uRmWWu2FigEZ43YHS",
         "panier": {
-            "valeur": 963.04,
+            "valeur": 1926.08,
             "items": [
                 {
                     "id": 0,
@@ -65,7 +65,7 @@
                     "nomProduit": "Tapis de course",
                     "descriptionProduit": "Tapis de course pour s'entraîner.",
                     "prix": 240.76,
-                    "quantite": 4
+                    "quantite": 8
                 }
             ]
         },
