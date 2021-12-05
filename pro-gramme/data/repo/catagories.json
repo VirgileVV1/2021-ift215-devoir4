@@ -1,12 +1,17 @@
 [
     {
         "id": 1,
-        "nom": "Prunier",
-        "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
+        "nom": "Nutritif",
+        "description": "Produits alimentaire"
     },
     {
         "id": 2,
-        "nom": "Banane",
-        "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
+        "nom": "Equipement sportif",
+        "description": "Matériel pour l'entraînement sportif"
+    },
+    {
+        "id": 3,
+        "nom": "Programme",
+        "description": "Nos programmes sportifs"
     }
 ]

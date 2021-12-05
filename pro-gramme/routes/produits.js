@@ -44,7 +44,7 @@ const rechercherProduitValidation = {
     serial: Joi.string(),
     nom: Joi.string(),
     description: Joi.string(),
-    prix: Joi.number()
+    prix: Joi.number(),
   })
 };
 

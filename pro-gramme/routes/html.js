@@ -49,4 +49,8 @@ router.get('/listeProduits', function(req, res){
     res.sendFile(path.join(__dirname + '/../client/listeProduits.html'));
 });
 
+router.get('/produit/:id', function(req, res, next){
+    res.sendFile(path.join(__dirname + '/../client/produit.html'));
+});
+
 module.exports = router

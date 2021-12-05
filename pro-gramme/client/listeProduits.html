@@ -1,4 +1,29 @@
-<h1 id="recherche">Rechercher</h1>
+<div class="right">
+    <button id="btnRecherche" class="recherche">Rechercher</button>
+</div>
+
+<section id="bloc-recherche" class="cache">
+    <form id="formualireRecherche">
+        <div id="menu-categorie">
+            <label for="categorie">Type de produits:</label>
+            <select name="categorie" size="1" id="categorie">
+                <option selected>PAS IMPLEMENTE
+                <option>Nutritif
+                <option>Equipement sportif
+                <option>Programme
+            </select>
+        </div>
+
+        <div id="text-Recherche">
+            <label for="text">Recherche affiné:</label>
+            <input type="text" id="text" name="textRecherche">
+        </div>
+
+        <div id="btnRechercher">
+            <input onclick="rechercheBtn()" class="btn_rechercher" type="button" value="Rechercher">
+        </div>
+    </form>
+</section>
 
 <section id="liste-produits-grille">
 </section>

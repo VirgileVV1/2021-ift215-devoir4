@@ -6,7 +6,7 @@
 }
 
 #corps-principal{
-   /*background-color: antiquewhite;*/ /* ne modifiez pas cette div, elle est commune a toutes nos pages*/ 
+   background-color: antiquewhite; /* ne modifiez pas cette div, elle est commune a toutes nos pages*/
 }
 
 nav.nav-secondaire{
@@ -80,7 +80,7 @@ nav.nav-principal {
    float: left;
    font-size: 16px;
    color: black;
-   text-align: cent  er;
+   text-align: center;
    padding-left:  30px;
    padding-right: 30px;
    height: 100%;
@@ -580,9 +580,43 @@ footer{
 }
 
 /*************** liste des produits **************/
-#recherche{
+.right{
    text-align: right;
+}
+
+.recherche{
    padding-right: 15px;
+   color: black;
+   border: none;
+   background-color: antiquewhite;
+   font-size: 20px;
+}
+
+.recherche:hover{
+   background-color: dimgrey;
+   padding-right: 15px;
+}
+
+#bloc-recherche{
+   background-color: gray;
+   padding: 15px;
+   display:flex;
+   align-items: center;
+}
+
+#formualireRecherche{
+   position: relative;
+   display: flex;
+   align-items: center;
+   text-align: center;
+}
+
+#formualireRecherche div{
+   padding: 15px;
+}
+
+.cache {
+   display: none !important;
 }
 
 #liste-produits-grille {
@@ -612,6 +646,11 @@ footer{
 .liste-produit-item h3{
    font-size: medium;
    text-align: left;
+}
+
+.liste-produit-item a{
+   color: black;
+   text-decoration: none;
 }
 
 #prix{
@@ -653,3 +692,51 @@ footer{
 
 /* Add a grey background color on mouse-over */
 .Pagination button:hover:not(.active) {background-color: #ddd;}
+
+/************* Produit ********************/
+.page-produit{
+   display: grid;
+   grid-template-columns: auto auto;
+   justify-content: space-between;
+   grid-row-gap: 25px;
+   margin-right: 25px;
+   margin-bottom: 25px;
+   padding: 15px;
+}
+
+.page-produit section{
+   padding: 15px;
+}
+
+#information{
+   width: 500px;
+}
+
+#image-produit-grand{
+   height: 400px;
+}
+
+#commentaire{
+   padding: 15px;
+}
+
+#comm{
+   padding: 15px;
+}
+
+#Com{
+   font-size: large;
+}
+
+#btn_add{
+   float: right;
+}
+
+#comment {
+   padding: 5px;
+   width: max-content;
+}
+
+.ComPresent fieldset{
+   margin-top: 10px;
+}
