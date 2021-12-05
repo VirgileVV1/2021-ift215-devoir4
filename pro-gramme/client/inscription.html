@@ -1,32 +1,55 @@
 
 <div class="div-background-i">
     <p></p>
+
     <section class="sec-i">
-    
+
         <h1 class="h1-titre">Inscription</h1>
+        <p id="erreur-i"></p>
+
         <form id="form-inscription" method="post" action="confirmation.html">
-            <div class="group">
-                <input type="text" name="prenom" id="prenom" placeholder="Prénom" required/>
-            </div>
-            <div class="group">
-                <input type="text" name="nom" id="nom" placeholder="Nom" required/>
-            </div>
-            <div class="group">
-                <input type="email" name="courriel" id="courriel" placeholder="Adresse électronique" required/>
-            </div>
-            <div class="group">
-                <input type="password" name="mdp" id="mdp" placeholder="mot de passe" required/>
-            </div>
-            <div class="group">
-                <input type="password" name="mdp" id="confirm-mdp" placeholder="répéter votre mot de passe" required/>
+            <fieldset id="#renseignement-auth">
+                <legend>Renseignements d'authentification</legend>
+                <div class="group">
+                    <label for="prenom_Inscrp" >Prénom</label>
+                    <input type="text" name="prenom_Inscrp" id="prenom_Inscrp" placeholder="Entrez votre prénom" size="10px" required/>
+                </div>
+                <div class="group">
+                    <label for="nom_Inscrp">Nom</label>
+                    <input type="text" name="nom_Inscrp" id="nom_Inscrp" placeholder="Entrez votre nom" required/>
+                </div>
+                <div class="group">
+                    <label for="age_Inscrp">Âge</label>
+                    <input type="number" name="age_Inscrp" id="age_Inscrp" placeholder="Entrez votre âge" required/>
+                </div>
+                <div class="group">
+                    <label for="courriel_Inscrp">Adresse courriel</label>
+                    <input type="email" name="courriel_Inscrp" id="courriel_Inscrp" placeholder="Entrez votre adresse éléctronique" required/>
+                </div>
+                <div class="group">
+                    <label for="mdp_Inscrp">Mot de passe</label>
+                    <input type="password" name="mdp_Inscrp" id="mdp_Inscrp" placeholder="Entrez votre mot de passe" required/>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Renseignements de livraison</legend>
+                <div class="group">
+                    <label for="adresse_Inscrp">Adresse</label>
+                    <input type="text" id="adresse_Inscrp" name="adresse_Inscrp" placeholder="Entrez votre adresse" required>
+                </div>
+                <div class="group">
+                    <label for="pays_Inscrp">Pays</label>
+                    <input type="text" id="pays_Inscrp" name="pays_Inscrp" placeholder="Entrez votre pays" required>
+                </div>
+            </fieldset>
+            <div class="group submit-group">
+                <input onclick="sinscrire()" id="btn-sinscrire" type="button" value="S'inscrire" />
             </div>
 
-            <div class="group-submit">
-                <input class="in-submit" type="submit" value="S'inscrire">
-            </div>
             <div class="div-connexion">
                 <a href="#/connexion">Vous avez deja un compte ? </a> 
             </div>
         </form>
     </section>
+
 </div>
