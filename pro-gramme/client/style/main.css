@@ -6,7 +6,7 @@
 }
 
 #corps-principal{
-   /*background-color: antiquewhite; *//* ne modifiez pas cette div, elle est commune a toutes nos pages*/
+   /*background-color: antiquewhite;*//* ne modifiez pas cette div, elle est commune a toutes nos pages*/
 }
 
 nav.nav-secondaire{
@@ -103,6 +103,7 @@ nav.nav-principal {
    left: 10%;
    bottom: 15%;
    transition: 0.3s;
+}
 a:hover::after {
    width: 80%;
 }
@@ -968,4 +969,34 @@ footer{
 
 .ComPresent fieldset{
    margin-top: 10px;
+}
+
+/************* Point de vente ********************/
+#nosPts{
+   padding-left: 15px;
+}
+
+#pts-de-vente{
+   margin-left: 40px;
+}
+
+#pts-de-vente section{
+   padding: 15px;
+}
+
+#canada article, #international article{
+   padding-left: 10px;
+}
+
+#img-vente{
+   float: left;
+   height: 300px;
+}
+
+#vente {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   justify-content: space-between;
+   grid-row-gap: 25px;
+   padding: 15px;
 }

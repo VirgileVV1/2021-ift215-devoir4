@@ -135,7 +135,7 @@
         "nom": "Programme débutant*",
         "description": "Programme d'entraînement pour sportif débutant, prix au mois.",
         "prix": 20.67,
-        "qte_inventaire": 20,
+        "qte_inventaire": 19,
         "categorie": {
             "id": 3,
             "nom": "Programme",
