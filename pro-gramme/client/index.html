@@ -9,13 +9,17 @@
     <link rel="stylesheet" href="style/main.css">
 
     <script src="scripts/connexion.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="scripts/authentification.js"></script>
     <script src="scripts/inscription.js"></script>
+
+    <script src="scripts/main.js"></script>
     <script src="scripts/points_de_vente.js"></script>
     <script src="scripts/navigation.js"></script>
     <script src="scripts/listeProduits.js"></script>
     <script src="scripts/paiement.js"></script>
     <script src="scripts/produit.js"></script>
+    <script src="scripts/panier.js"></script>
+    <script src="scripts/profil.js"></script>
 
     <title> Pro-gramme </title>
 </head>
@@ -26,6 +30,7 @@
         <div class="div-header">
             <nav class="nav-principal">
                     <div class="div-barreMenu2">
+                        <div id="msg-bvn"> <p id="p-bvn"> </p></div> <!-- ex : Bienvenue Virgile ! -->
                         <a href="#/contact">Contact</a>
                         <a href="#/aPropos">À propos</a>
                     </div>
@@ -34,11 +39,11 @@
            <nav class="nav-secondaire">
 
                <div class="div-barreMenu">
-                   <a href="#/" id = "a-Accueil" >Accueil</a>
+                   <a href="#/" id="a-accueil" >Accueil</a>
                    <a href="#/listeProduits">Nos produits</a>
                    <a href="#/points_de_vente">Nos points de ventes</a>
                    <a href="#/panier" ><img src ="images/caddi.png" id = "img-caddi"></a>
-                   <a href="#/connexion" ><img src ="images/silhouette.png" id = "img-silhouette"></a>
+                   <a onclick="redirectionConnexion()"><img src ="images/silhouette.png" id="img-silhouette"></a>
                </div>
            </nav>
         </div>
@@ -47,6 +52,7 @@
 <div id="corps-principal">
 
 </div>
+
 <footer>
     Pro-Gramme - Tous droits réservés
 </footer>

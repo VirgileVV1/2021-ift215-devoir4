@@ -37,15 +37,18 @@ function connexion() {
             }
         })
         .then(json => {
+            console.log('json',json)
             const expire = new Date();
             expire.setHours(expire.getHours() + 2);
             window.usager = {
                 id: json.idClient,
+                prenom: json.prenom,
                 role: json.role,
                 token: json.token,
                 expire: expire
             };
             console.log(window.usager)
+            window.location.href = "#/profil"
         })
         .catch ( erreur => {
             console.log(erreur)

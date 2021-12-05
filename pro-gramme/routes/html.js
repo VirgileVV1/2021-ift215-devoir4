@@ -40,7 +40,9 @@ router.get('/points_de_vente', function(req, res){
 router.get('/panier', function(req, res){
     res.sendFile(path.join(__dirname + '/../client/panier.html'));
 });
-
+router.get('/profil', function(req, res){
+    res.sendFile(path.join(__dirname + '/../client/profil.html'));
+});
 router.get('/paiement', function(req, res){
     res.sendFile(path.join(__dirname + '/../client/paiement.html'));
 });

@@ -6,7 +6,7 @@
 }
 
 #corps-principal{
-   background-color: antiquewhite; /* ne modifiez pas cette div, elle est commune a toutes nos pages*/
+   /*background-color: antiquewhite; *//* ne modifiez pas cette div, elle est commune a toutes nos pages*/
 }
 
 nav.nav-secondaire{
@@ -50,6 +50,11 @@ nav.nav-principal {
    align-items: center;
    justify-content: end;
    height: 100%;
+}
+#msg-bvn {
+   width: 70%;
+   display: flex;
+   justify-content: center;
 }
 .div-barreMenu2 a {
    display: flex;
@@ -363,8 +368,38 @@ a:hover::after {
    margin-right: 3%;
 }
 .sec-listeProduit .div-liste {
-   height: 200px; /*taille au hasard de la liste*/
+  /* height: 200px;*/ /*taille au hasard de la liste*/
    margin-top: 2%;
+   /*display: flex;
+   flex-direction: row;
+   align-items: start;
+   justify-content: start;*/
+}
+
+.sec-listeProduit .div-liste table {
+   width: 99%;
+   margin: 0;
+   /*border: black;
+   border-style: solid;*/
+}
+.sec-listeProduit .div-liste table th, .sec-listeProduit .div-liste table td {
+   border-bottom: 1px solid black;
+ }
+.sec-listeProduit .div-liste .l {
+   height: 10px;
+   margin: 5px;
+}
+.sec-listeProduit .div-liste #p-nom {
+   width: 20%;
+}
+.sec-listeProduit .div-liste #p-desc {
+   width: 50%;
+}
+.sec-listeProduit .div-liste #p-prix {
+   width: 10%;
+}
+.sec-listeProduit .div-liste #p-qte {  
+   width: 10%;
 }
 
 /* partie droite pour le paiement */
@@ -551,6 +586,16 @@ a:hover::after {
 
 
 /*************** page connexion ****************/
+.div-background-c {
+   margin: 0px;
+   padding: 0px;
+   height: 80vh;
+   width: 99vw;
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 .sec-c form {
    margin-bottom: 15vh;
    display: flex;
@@ -706,10 +751,62 @@ a:hover::after {
 
 /*************** fin page paiement ************/
 
+/*************** page profil ************/
+.sec-p {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.sec-p #table-p {
+   margin: 8vh;
+   border: #444444;
+   border-style: solid;
+   font-size: 2em;
+}
+.sec-p #table-p caption {
+   font-size: 1.6em;
+   padding: 5px;
+}
+.sec-p #table-p td {
+   height: 7vh;
+   width: 35vw;
+}
+.sec-p #table-p th {
+   width: 20vw;
+}
+
+.sec-p #table-p tr:nth-child(even) {
+   background-color: rgba(247, 160, 54, 0.5);
+}
+
+.sec-p .btn-deconnexion {
+   font-weight: 700;
+   font-size: 1.2em;
+   color: #999999;
+   background-color: black;
+   border-radius: 15px;
+   padding: 12px 32px;
+   border-color: black;
+   border-style: solid;
+}
+.sec-p .btn-deconnexion:hover {
+   background-color: whitesmoke;
+}
+.sec-p .div-p {
+   display: flex;
+   justify-content: center;
+}
+/*************** fin page profil ************/
+
+
 footer{
-    text-align: center;
-    width: 80%;
-    clear: both;
+   display: flex;
+   align-self: end;
+   justify-content: center;
+   margin-left: 10%;
+   width: 80%;
+   clear: both;
 }
 
 /*************** liste des produits **************/

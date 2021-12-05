@@ -1,7 +1,7 @@
 /**
  * Il se peut qu'on manque l'événement de window hashchange, alors on met aussi notre appel sur DOMContentLoaded
  */
-document.addEventListener('DOMContentLoaded', function(){
+ document.addEventListener('DOMContentLoaded', function(){
     hashHandler();
 }, false);
 
@@ -49,6 +49,9 @@ async function hashHandler() {
             contenu = await reponse.text();
             remplacerContenu("corps-principal", contenu);
         }
+        if (window.usager != undefined) {
+            document.getElementById('p-bvn').innerHTML = "<p> Bienvenue "+ window.usager.prenom +"! </p>"
+        }
     }
     catch(erreur){
         console.log(erreur.message);
@@ -59,7 +62,19 @@ async function hashHandler() {
 window.addEventListener('hashchange', hashHandler, false);
 
 
+
 /* on met ici toutes les fonctions de redirection */
 function redirectionPaiement() {
     window.location.href = "./#/paiement"
+}
+
+function redirectionConnexion() {
+    if (window.usager == undefined) {
+        window.location.href = "#/connexion"  
+        console.log('l\'utilisateur n\'est pas connecté, redirection vers la page de connexion');
+    } else {
+        window.location.href = "#/profil"
+        console.log('l\'utilisateur est connecté jusqu\'au');    
+        console.log(window.usager.expire);
+    }
 }

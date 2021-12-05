@@ -41,6 +41,7 @@ class GestionConnexion {
             { expiresIn: '2h' });
           res.status(200).json({
             idClient: client.id,
+            prenom: client.prenom,
             token: token,
             role: role
           });
