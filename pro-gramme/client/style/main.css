@@ -483,8 +483,8 @@ a:hover::after {
    padding: 2% 8%;
    border-color: black;
    border-style: solid;
-   /*width: 12vw;
-   height: 4vh;*/
+   /*width: 12vw;*/
+   height: 7vh;
    margin: 4vh 0vh 0vh 15vh;
 }
 #btn-sinscrire:hover {
