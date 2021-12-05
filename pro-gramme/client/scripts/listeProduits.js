@@ -49,9 +49,12 @@ function ajoutCaddi(indice){
         const init = {
             method: 'POST',
             body: JSON.stringify(corps),
-            headers: {'Content-type': 'application/json; charset=UTF-8'}
+            headers: {'Content-type': 'application/json; charset=UTF-8',
+                        'Authorization': 'Bearer '+window.usager.token
+                    }
         };
-        let input = '/clients/' + usager.id + '/panier';
+  
+        let input = 'clients/' + usager.id + '/panier';
         fetch(input, init)
             .then(reponse => {
                 return reponse.json();
