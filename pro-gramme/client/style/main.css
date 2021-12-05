@@ -181,11 +181,17 @@ a:hover::after {
 {
    margin-bottom: 10px;
 }
+/******************************* PAGE D'ACCUEIL *************/
+
 #texte-acceuil, #section-inscription{
    width: 66%;
    margin-left: 34%;
 }
-
+#div-Principal
+{
+   height: 1860px;
+   background-color: gray;
+}
 #div-corpsPrincipal{
    margin-bottom: 25px;
 }
@@ -195,16 +201,11 @@ a:hover::after {
 
 #div-corpsPrincipal
 {
-
    background: url(../images/haltere.jpg) ;
    background-repeat: no-repeat;
    background-size: cover; /* Resize the background image to cover the entire container */
-
 }
-#div-Principal
-{
 
-}
 .div-partie2
 {
    background-color: gray;
@@ -219,21 +220,114 @@ a:hover::after {
 }
 .div-partie3
 {
-    background-color: white;
-    height: 300px;
+   background-color: #F2F2F2;
+   height: 700px;
+   display: flex;
+   align-items: start;
 }
 .div-sousPartie3
 {
-   background-color: #5E97B0;
-   height: 400px;
-   width: 400px;
-   margin: 5% auto 0;
+   margin: 7% 10% 0;
    box-shadow: 8px 5px 5px gray;
+   width: 480px;
+   height: 480px;
+   background-color: #F9AB4D;
+   animation: square-to-circle 7s infinite alternate;
 }
-#div-Principal
+@keyframes square-to-circle {
+   0%  {
+      border-radius:0 0 0 0;
+      background:#FFCE75;
+
+   }
+   25%  {
+      border-radius:10% 10% 10% 10%;
+      background:#FCC584;
+
+   }
+   50%  {
+      border-radius:25% 25% 25% 25%;
+      background:#FFCE74;
+
+   }
+
+}
+.div-2sousPartie3
 {
-   height: 1500px;
+   margin: 15% 10% 0;
 }
+.div-partie4 {
+   background-color: gray;
+   height: 450px;
+   display: flex;
+   justify-content: center;
+}
+.div-Texte-Partie4
+{
+   margin-top: 6vh;
+   padding-right: 200px;
+   font-size: 30px;
+   font-family: Georgia;
+   color : #BCBCBC
+}
+.div-Contact .group input{
+   font-size: 1.5vw;
+   margin-top: 3vh;
+   border: none;
+   border-radius: 10px;
+   width: 30vw;
+   height: 7vh;
+   padding-left: 20px;
+
+}
+#message-Contact {
+   height: 20vh;
+}
+
+.div-Contact .group-submit {
+   display: flex;
+   justify-content: center;
+}
+
+.div-Contact .in-submit {
+   font-size: 100%;
+   color: #999999;
+   background-color: black;
+   border-radius: 20px;
+   padding: 1% 8%;
+   border-color: black;
+   border-style: solid;
+   margin: 6vh 60vh 0vh 0vh;
+}
+.div-Contact .in-submit:hover {
+   background-color: whitesmoke;
+}
+/******* Titres ******/
+#h1-titre1
+{
+   padding-top: 200px;
+   font-size: 60px;
+   font-family: Georgia;
+   padding-right: 800px;
+   color: white;
+   text-shadow: 4px 3px 0px rgb(71, 71, 71), 9px 8px 0px rgba(32, 32, 32, 0.15);
+}
+#h1-titre2
+{
+   font-size: 40px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   color: white;
+   font-family: Georgia;
+   padding-left: 400px;
+   text-shadow: 4px 3px 0px rgb(95, 92, 92), 9px 8px 0px rgba(32, 32, 32, 0.15);
+}
+.h1-Apropos
+{
+   padding-top: 2px;
+}
+/****** FIN PAGE D'ACCUEIL *****/
+
 /***********************- PAGE PANIER -********************/
 .div-container {
    display: flex;
@@ -339,10 +433,11 @@ a:hover::after {
 
 /*************** page inscription *************/
 
+
 .div-background-i {
    margin: 0px;
    padding: 0px;
-   height: 80vh;
+   height: 130vh;
    width: 100vw;
    background-color: whitesmoke;
    display: flex;
@@ -357,8 +452,8 @@ a:hover::after {
    justify-content: center;
    background-color: #F9AB4D;/*rgb(223, 181, 167);*/
   /* margin: 0vh 30vw 0vh 30vw;*/
-   height: 70vh;
-   width: 30vw;
+   height: 120vh;
+   width: 40vw;
    border-radius: 20px;
 }
 .sec-i .h1-titre{
@@ -368,7 +463,7 @@ a:hover::after {
    padding: 0vh 3vw 0vh 3vw;
 }
 .sec-i .group input{
-   font-size: 1.5vw;
+   font-size: 1.2vw;
    margin-top: 3vh;
    border: none;
    border-radius: 10px;
@@ -377,24 +472,22 @@ a:hover::after {
 }
 ::-webkit-input-placeholder { text-align:center; }
 
-.sec-i .group-submit {
-   display: flex;
-   justify-content: center;
-}
-
-.sec-i .in-submit {
+#btn-sinscrire
+{
    font-weight: 500;
-   font-size: 150%;
+   font-size: 110%;
+   text-align: center;
    color: #999999;
    background-color: black;
    border-radius: 20px;
    padding: 2% 8%;
    border-color: black;
    border-style: solid;
-   width: 60%;
-   margin: 6vh 0vh 0vh 0vh;
+   /*width: 12vw;
+   height: 4vh;*/
+   margin: 4vh 0vh 0vh 15vh;
 }
-.sec-i .in-submit:hover {
+#btn-sinscrire:hover {
    background-color: whitesmoke;
 }
 
@@ -412,6 +505,46 @@ a:hover::after {
    .sec-i .h1-titre{
       font-size: 6vw;
    }
+}
+#prenom_Inscrp
+{
+   margin-left: 12vh;
+}
+#nom_Inscrp
+{
+   margin-left: 16vh;
+}
+#age_Inscrp
+{
+   margin-left: 17.5vh;
+}
+#courriel_Inscrp
+{
+   margin-left: 2vh;
+}
+#mdp_Inscrp
+{
+   margin-left: 6vh;
+}
+
+#adresse_Inscrp
+{
+   margin-left: 12.5vh;
+}
+#pays_Inscrp
+{
+   margin-left: 16vh;
+}
+::placeholder {
+   color: #BFBFBF;
+   font-size: 1vw;
+}
+.sec-i #erreur-i {
+   font-weight: bold;
+   color: red;
+   margin-left: 1vw;
+   margin-right: 1vw;
+   font-size: 1vw;
 }
 
 /*************** fin page inscription *********/
