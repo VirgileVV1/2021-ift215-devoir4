@@ -36,37 +36,37 @@ function sinscrire() {
         afficherMsgErreur(error);
     }
     if (requestOk) {
-        fetch('/clients', init)
-            .then(reponse => {
-                if (reponse.ok) {
-                    return reponse.json();
-                } else {
+        document.getElementById('erreur-i').innerHTML = ""
+          fetch('/clients', init)
+              .then(reponse => {
+                  if (reponse.ok) {
+                      return reponse.json();
+                  } else {
+                      if (reponse.status == 400) {
+                          throw new Error("L'utilisateur existe déjà" );
+                      } else {
+                          throw new Error(reponse.statusText);
+                      }
+                      //console.log(response.text().then());
+                      //return reponse.text();
+                  }
+              })
+              .then(json => {
+                  if (typeof json === 'object' && json !== null) {
+                      console.log('Reussi');
+                      afficherMessage('Inscription réussie!', 'positif');
+                  } else {
+                      console.log(json);
+                      afficherMessage(`Erreur: ${json}`, 'negatif');
+                      // document.getElementById('erreur-i').innerHTML = "<p> ERROR </p>";
 
-                    if (reponse.status == 400) {
-                        throw new Error("L'utilisateur existe déjà" );
-                    } else {
-                        throw new Error(reponse.statusText)
-                    }
-                    //console.log(response.text().then());
-                    return reponse.text();
-                }
-            })
-            .then(json => {
-                if (typeof json === 'object' && json !== null) {
-                    console.log('Reussi');
-                    afficherMessage('Inscription réussie!', 'positif');
-                } else {
-                    console.log(json);
-                    afficherMessage(`Erreur: ${json}`, 'negatif');
-                    // document.getElementById('erreur-i').innerHTML = "<p> ERROR </p>";
+                  }
+              })
+              .catch(err => {
+                  console.log(err);
+                  afficherMsgErreur(err);
 
-                }
-            })
-            .catch(err => {
-                console.log(err);
-                afficherMsgErreur(err);
-
-            });
+              });
     }
 
 }
@@ -76,7 +76,7 @@ function sinscrire() {
  * Remplace le DOMContentLoaded qui est lancé bien avant que le contenu associé à ce script ne soit dans l'écran.
  * @returns {Promise<void>}
  */
-async function chargerinscription () {
+/*async function chargerinscription () {
     const btnInscription = document.getElementById('btn-sinscrire');
     btnInscription.addEventListener('click', sinscrire);
 };
@@ -86,4 +86,4 @@ function afficherMsgErreurInscr(erreur) {
     err = erreur.toString().split(': ')
     document.getElementById('erreur-i').innerHTML = "<p> erreur: le champ \""+err[1]+"\" ne peut pas être vide </p>"
 
-}
+}*/
