@@ -103,7 +103,6 @@ nav.nav-principal {
    left: 10%;
    bottom: 15%;
    transition: 0.3s;
-}
 a:hover::after {
    width: 80%;
 }
@@ -541,32 +540,32 @@ a:hover::after {
       font-size: 6vw;
    }
 }
-#prenom_Inscrp
+#prenom
 {
    margin-left: 12vh;
 }
-#nom_Inscrp
+#nom
 {
    margin-left: 16vh;
 }
-#age_Inscrp
+#age
 {
    margin-left: 17.5vh;
 }
-#courriel_Inscrp
+#courriel
 {
    margin-left: 2vh;
 }
-#mdp_Inscrp
+#mdp
 {
    margin-left: 6vh;
 }
 
-#adresse_Inscrp
+#adresse
 {
    margin-left: 12.5vh;
 }
-#pays_Inscrp
+#pays
 {
    margin-left: 16vh;
 }
