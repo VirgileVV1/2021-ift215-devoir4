@@ -746,7 +746,24 @@ a:hover::after {
    transform: scale(1.2);
    transition: transform 1.2s;
 }
+.div-paiement {
+   display: flex;
+   justify-content: center;
+}
 
+.div-paiement input {
+   font-size: 100%;
+   color: #999999;
+   background-color: black;
+   border-radius: 20px;
+   padding: 1% 8%;
+   border-color: black;
+   border-style: solid;
+   margin: 6vh 0vh 4vh 0vh;
+}
+.div-paiement input:hover {
+   background-color: whitesmoke;
+}
     
 
 /*************** fin page paiement ************/
@@ -999,4 +1016,126 @@ footer{
    justify-content: space-between;
    grid-row-gap: 25px;
    padding: 15px;
+}
+/*************** PAGE D'AIDE ******************/
+#h1-aide
+{
+   margin-top: 5%;
+   margin-left: 2%;
+   margin-bottom: 10%;
+}
+#h2-aide
+{
+   margin-top: 10%;
+   margin-left: 2%;
+   margin-bottom: 5%;
+}
+#h3-aide
+  {
+     margin-top: 5%;
+  }
+#h4-aide
+ {
+    margin-top: 3%;
+ }
+.div-principal_aide {
+   display: grid;
+   grid-template-columns: auto auto auto auto auto;
+   grid-gap: 1px;
+   background-color: #F3C387;
+
+   justify-content: space-between;
+}
+.div-1
+{
+   padding-left: 2%;
+   margin-top:8%;
+   margin-bottom: 3%;
+
+}
+.div-2
+{
+   padding-left: 2%;
+   margin-top:0.5%;
+}
+.div-3
+  {
+
+   padding-left: 2%;
+   margin-top:10%;
+}
+.article-liste_aide_item1
+{
+
+   border: 1px solid rgba(0,0,0,0.8);
+   text-align: center;
+   background-color: white;
+}
+
+.article-liste_aide_item1 h2,.article-liste_aide_item2 h2, .article-liste_aide_item3 h2, .article-liste_aide_item4 h2
+, .article-liste_aide_item5 h2{
+   font-weight: 500;
+   font-size: 2vw;
+   padding-top: 2%;
+   padding-bottom: 3%;
+   text-align: center;
+}
+
+.article-liste_aide_item1 p, .article-liste_aide_item2 p, .article-liste_aide_item3 p{
+   padding-right: 2%;
+   padding-bottom: 2%;
+   text-align: justify;
+}
+
+#p-item4_p1, #p-item4_p2
+{
+   padding-right: 2%;
+   padding-bottom: 2%;
+   text-align: justify;
+}
+.article-liste_aide_item2
+{
+   border: 1px solid rgba(0,0,0,0.8);
+
+   text-align: center;
+
+   background-color: white;
+}
+
+.article-liste_aide_item3
+{
+   border: 1px solid rgba(0,0,0,0.8);
+   text-align: center;
+   background-color: white;
+}
+.article-liste_aide_item4
+{
+   border: 1px solid rgba(0,0,0,0.8);
+   text-align: center;
+   background-color: white;
+
+}.article-liste_aide_item5
+{
+   border: 1px solid rgba(0,0,0,0.8);
+   text-align: center;
+
+   background-color: white;
+
+}
+#img-paiement {
+   height : 80%;
+   width : 80%;
+}
+
+#p-AutreQuestion
+{
+   text-align: center;
+   font-weight: 700;
+   font-size: 1.2vw;
+}
+#erreur-i_Paiement
+{
+   text-align: center;
+   margin: 5px;
+   color: red;
 }
