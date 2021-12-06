@@ -54,10 +54,10 @@ function sinscrire() {
               .then(json => {
                   if (typeof json === 'object' && json !== null) {
                       console.log('Reussi');
-                      afficherMessage('Inscription réussie!', 'positif');
+                     // afficherMessage('Inscription réussie!', 'positif');
                   } else {
                       console.log(json);
-                      afficherMessage(`Erreur: ${json}`, 'negatif');
+                     // afficherMessage(`Erreur: ${json}`, 'negatif');
                       // document.getElementById('erreur-i').innerHTML = "<p> ERROR </p>";
 
                   }
