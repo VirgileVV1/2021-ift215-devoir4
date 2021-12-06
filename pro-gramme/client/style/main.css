@@ -186,6 +186,11 @@ a:hover::after {
 {
    margin-bottom: 10px;
 }
+#img-help
+{
+   height : 25px;
+   width : 25px;
+}
 /******************************* PAGE D'ACCUEIL *************/
 
 #texte-acceuil, #section-inscription{

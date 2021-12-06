@@ -9,38 +9,14 @@
         "courriel": "aaa@bbb.com",
         "mdp": "$2b$08$CEfAuisfWI/driqC4REyfOo/y8RG0g1dw7ngClRLBk1QANEs.U53u",
         "panier": {
-            "valeur": 268.27000000000004,
+            "valeur": 12.99,
             "items": [
                 {
                     "id": 0,
-                    "idProduit": 1,
-                    "nomProduit": "Tomate",
-                    "descriptionProduit": "Un poirier est une espèce d'arbre qui offre de bons suppléments Un poirier est une espèce d'arbre qui offre de bons suppléments Un poirier est une espèce d'arbre qui offre de bons suppléments Un poirier est une espèce d'arbre qui offre de bons suppléments",
-                    "prix": 24.76,
-                    "quantite": 4
-                },
-                {
-                    "id": 1,
-                    "idProduit": 2,
-                    "nomProduit": "Poivron",
-                    "descriptionProduit": "Le poivron donne du gout a vos plat",
-                    "prix": 24.76,
-                    "quantite": 2
-                },
-                {
-                    "id": 2,
-                    "idProduit": 3,
-                    "nomProduit": "Poire",
-                    "descriptionProduit": "Un poirier est une espèce d'arbre qui offre de bons suppléments",
-                    "prix": 24.76,
-                    "quantite": 4
-                },
-                {
-                    "id": 3,
-                    "idProduit": 10,
-                    "nomProduit": "Programme débutant*",
-                    "descriptionProduit": "Programme d'entraînement pour sportif débutant, prix au mois.",
-                    "prix": 20.67,
+                    "idProduit": 0,
+                    "nomProduit": "Nutriscore 2000",
+                    "descriptionProduit": "Complément alimentaire pour sportif.",
+                    "prix": 12.99,
                     "quantite": 1
                 }
             ]
@@ -62,6 +38,47 @@
                 ],
                 "status": "reçue",
                 "date": "2021-11-13T21:44:38.858Z"
+            },
+            {
+                "id": 6,
+                "idClient": 1,
+                "montant": 268.27000000000004,
+                "produits": [
+                    {
+                        "id": 0,
+                        "idProduit": 1,
+                        "nomProduit": "Tomate",
+                        "descriptionProduit": "Un poirier est une espèce d'arbre qui offre de bons suppléments Un poirier est une espèce d'arbre qui offre de bons suppléments Un poirier est une espèce d'arbre qui offre de bons suppléments Un poirier est une espèce d'arbre qui offre de bons suppléments",
+                        "prix": 24.76,
+                        "quantite": 4
+                    },
+                    {
+                        "id": 1,
+                        "idProduit": 2,
+                        "nomProduit": "Poivron",
+                        "descriptionProduit": "Le poivron donne du gout a vos plat",
+                        "prix": 24.76,
+                        "quantite": 2
+                    },
+                    {
+                        "id": 2,
+                        "idProduit": 3,
+                        "nomProduit": "Poire",
+                        "descriptionProduit": "Un poirier est une espèce d'arbre qui offre de bons suppléments",
+                        "prix": 24.76,
+                        "quantite": 4
+                    },
+                    {
+                        "id": 3,
+                        "idProduit": 10,
+                        "nomProduit": "Programme débutant*",
+                        "descriptionProduit": "Programme d'entraînement pour sportif débutant, prix au mois.",
+                        "prix": 20.67,
+                        "quantite": 1
+                    }
+                ],
+                "status": "reçue",
+                "date": "2021-12-06T00:56:36.664Z"
             }
         ]
     },
@@ -121,5 +138,20 @@
                 "date": "2021-11-13T21:52:59.697Z"
             }
         ]
+    },
+    {
+        "id": 4,
+        "prenom": "mey",
+        "nom": "azouz",
+        "age": 21,
+        "adresse": "21cc",
+        "pays": "Fr",
+        "courriel": "m@gmail.com",
+        "mdp": "$2b$08$/xfY7gXvTUmWfrOWvHwhk.4LVlH2VlnWgxhmBij55ALgJuR1N35By",
+        "panier": {
+            "valeur": 0,
+            "items": []
+        },
+        "historique": []
     }
 ]

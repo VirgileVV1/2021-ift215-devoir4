@@ -54,5 +54,7 @@ router.get('/listeProduits', function(req, res){
 router.get('/produit/:id', function(req, res, next){
     res.sendFile(path.join(__dirname + '/../client/produit.html'));
 });
-
+router.get('/aide', function(req, res, next){
+    res.sendFile(path.join(__dirname + '/../client/aide.html'));
+});
 module.exports = router
