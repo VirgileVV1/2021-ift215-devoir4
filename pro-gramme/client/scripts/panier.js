@@ -90,7 +90,6 @@ function ajouterQte(idItem) {
  * si le quantité est de 1 alors le produit est supprimé du panier
 */
 function soustraireQte(idItem) {
-    idItem = 3
     fetch('/clients/'+window.usager.id+'/panier/'+idItem, {
         headers: {'Authorization': 'Bearer '+window.usager.token}
     })
