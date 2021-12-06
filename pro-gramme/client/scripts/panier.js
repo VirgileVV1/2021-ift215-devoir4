@@ -47,7 +47,7 @@ function afficherPanier(panierJson) {
     let element = ""
     for (let i = 0; i< panier.length; i++) {
         element +="<tr>"
-        element +="<th id=\"p-nom\"> <p><b>"+panier[i].nomProduit +panier[i].id+"</b></p><br> </th>"
+        element +="<th id=\"p-nom\"> <p><b>"+panier[i].nomProduit+"</b></p><br> </th>"
         element +="<td id=\"p-desc\"> <p>"+panier[i].descriptionProduit+"</p><br> </td>"
         element +="<td id=\"p-prix\"> <p>"+panier[i].prix+"$</p><br></td>"
         element +="<td id=\"p-qte\"> <p class=\"lp-qte\">"+panier[i].quantite+"</p>"
