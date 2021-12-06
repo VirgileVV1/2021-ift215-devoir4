@@ -51,8 +51,8 @@ function afficherPanier(panierJson) {
         element +="<td id=\"p-desc\"> <p>"+panier[i].descriptionProduit+"</p><br> </td>"
         element +="<td id=\"p-prix\"> <p>"+panier[i].prix+"$</p><br></td>"
         element +="<td id=\"p-qte\"> <p class=\"lp-qte\">"+panier[i].quantite+"</p>"
-        element += "<button onclick=\"ajouterQte("+panier[i].id+")\" class=\"btn-modifQte\">+</button>"
-        element += "<button onclick=\"soustraireQte("+panier[i].id+")\" class=\"btn-modifQte\">-</button></td>"
+        element += "<button onclick=\"ajouterQte("+panier[i].idProduit+")\" class=\"btn-modifQte\">+</button>"
+        element += "<button onclick=\"soustraireQte("+panier[i].idProduit+")\" class=\"btn-modifQte\">-</button></td>"
         element +="</tr>"
     }
     document.getElementById("div-affichagePrix").innerHTML = "<p>Prix total : "+ panierJson.valeur+"$</p>"
@@ -90,6 +90,7 @@ function ajouterQte(idItem) {
  * si le quantité est de 1 alors le produit est supprimé du panier
 */
 function soustraireQte(idItem) {
+    idItem = 3
     fetch('/clients/'+window.usager.id+'/panier/'+idItem, {
         headers: {'Authorization': 'Bearer '+window.usager.token}
     })
@@ -113,7 +114,7 @@ function soustraireQte2(item, idItem) {
             body: JSON.stringify({quantite:-1}),
             headers: {'Content-type': 'application/json; charset=UTF-8', 'Authorization': 'Bearer '+window.usager.token}
         };
-        fetch('/clients/'+window.usager.id+'/panier/'+0, init)
+        fetch('/clients/'+window.usager.id+'/panier/'+idItem, init)
         .then( json => {chargerpanier()})
 
     } else {
@@ -124,7 +125,7 @@ function soustraireQte2(item, idItem) {
             body: JSON.stringify({quantite:-1}),
             headers: {'Content-type': 'application/json; charset=UTF-8', 'Authorization': 'Bearer '+window.usager.token}
         };
-        fetch('/clients/'+window.usager.id+'/panier/'+0, init)
+        fetch('/clients/'+window.usager.id+'/panier/'+idItem, init)
         .then( reponse => {
             if (reponse.ok) {
                 return reponse.json()
