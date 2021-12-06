@@ -62,7 +62,7 @@ function afficherPanier(panierJson) {
 
 /** enleve les produits du panier de l'utilisateur */
 function annulerPanier() {
-    console.log('Le bouton pour vider le panier n\'est pas encore implémenté")
+    console.log('Le bouton pour vider le panier n\'est pas encore implémenté')
 }
 
 /** ajoute une quantite a l'item qui dont on passe l'id en param de la fct */
