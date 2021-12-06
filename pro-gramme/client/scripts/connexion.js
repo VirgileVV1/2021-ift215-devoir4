@@ -51,6 +51,9 @@ function connexion() {
                 token: json.token,
                 expire: expire
             };
+            if (window.usager.id == 0) {
+                window.usager.prenom = 'admin'
+            }
             console.log(window.usager)
             window.location.href = "#/profil"
         })

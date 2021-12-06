@@ -5,7 +5,7 @@
         "nom": "Nutriscore 2000",
         "description": "Complément alimentaire pour sportif.",
         "prix": 12.99,
-        "qte_inventaire": 162,
+        "qte_inventaire": 161,
         "categorie": {
             "id": 1,
             "nom": "Nutritif",

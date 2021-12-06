@@ -57,4 +57,10 @@ router.get('/produit/:id', function(req, res, next){
 router.get('/aide', function(req, res, next){
     res.sendFile(path.join(__dirname + '/../client/aide.html'));
 });
+
+/* Page pour les preparateurs de commande pour voir la liste des commandes*/
+router.get('/listeVentes', function(req, res){
+    res.sendFile(path.join(__dirname + '/../client/listeVentes_PC.html'));
+});
+
 module.exports = router

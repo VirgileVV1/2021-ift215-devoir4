@@ -68,6 +68,10 @@ function redirectionPaiement() {
     window.location.href = "./#/paiement"
 }
 
+function redirectionListeVentes() {
+    window.location.href = '#/listeVentes'
+}
+
 function redirectionConnexion() {
     if (window.usager == undefined) {
         window.location.href = "#/connexion"  
