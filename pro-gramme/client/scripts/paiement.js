@@ -1,3 +1,4 @@
+
 let IMGID = 'aucun';
 
 function dom() {
@@ -61,4 +62,64 @@ function delAllBorder() {
     document.getElementById('img-dom').style.borderTopColor = "white";
     document.getElementById('img-exp').style.borderLeftColor = "white";
     document.getElementById('img-exp').style.borderBottomColor = "white";
+}
+
+function payer() {
+    fetch('clients/'+window.usager.id+'/panier', {
+        headers: {
+            'Authorization': 'Bearer '+window.usager.token
+        }
+    })
+    .then(response => {return response.json()})
+    .then(data => paiement(data))
+}
+
+function paiement(data) {
+    var token = window.usager.token
+    var panier = window.usager.produits
+    console.log(data.items.length)
+    var panierVide = false
+    try {
+        if (data.items.length == 0) {
+            panierVide = true
+            throw new Error("Le panier est vide")
+        }
+    } catch (error) {
+        afficherMsgErreurPanier(error);
+    }
+    if (!panierVide) {
+        fetch("/ventes",
+            {
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer ' + token
+
+                },
+                method: "POST",
+                body: JSON.stringify({idClient: 1})
+            })
+            .then(reponse => {
+                if (reponse.ok) {
+                    if (panierVide) {
+                        return reponse.json();
+                    } else {
+                        throw new Error(reponse.text)
+                    }
+                }
+
+            })
+            .then(res => {
+                console.log(res)
+            })
+            .catch(erreur => {
+                console.log(erreur)
+            });
+    }
+}
+
+function afficherMsgErreurPanier(erreur) {
+   // console.log(erreur)
+    //err = erreur.toString().split(': ')
+    document.getElementById('erreur-i_Paiement').innerHTML = "<p> erreur: le panier est vide </p>"
 }
