@@ -12,9 +12,9 @@ function connexion() {
     corps_json = JSON.parse(corps)
     try {
         if (corps_json.courriel == "")  {
-            throw new Error("adresse électronique")
+            throw new Error("Le champ adresse électronique ne peut pas être vide")
         } else if (corps_json.mdp == "") {
-            throw new Error("mot de passe")
+            throw new Error("Le champ mot de passe ne peut pas être vide")
         } 
     } catch (error) {
         requestOk = false
@@ -63,5 +63,5 @@ function connexion() {
 function afficherMsgErreur(erreur) {
     console.log(erreur)
     err = erreur.toString().split(': ')
-    document.getElementById('erreur-i').innerHTML = "<p> erreur: le champ \""+err[1]+"\" ne peut pas être vide </p>"
+    document.getElementById('erreur-i').innerHTML = "<p> erreur: \""+err[1]+"\"  </p>"
 }
