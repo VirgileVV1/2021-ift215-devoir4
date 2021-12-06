@@ -124,5 +124,22 @@
         ],
         "status": "reçue",
         "date": "2021-12-06T00:56:36.664Z"
+    },
+    {
+        "id": 7,
+        "idClient": 1,
+        "montant": 12.99,
+        "produits": [
+            {
+                "id": 0,
+                "idProduit": 0,
+                "nomProduit": "Nutriscore 2000",
+                "descriptionProduit": "Complément alimentaire pour sportif.",
+                "prix": 12.99,
+                "quantite": 1
+            }
+        ],
+        "status": "reçue",
+        "date": "2021-12-06T01:12:56.368Z"
     }
 ]

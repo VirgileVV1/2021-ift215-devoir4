@@ -63,7 +63,6 @@ function delAllBorder() {
     document.getElementById('img-exp').style.borderLeftColor = "white";
     document.getElementById('img-exp').style.borderBottomColor = "white";
 }
-
 function payer() {
     fetch('clients/'+window.usager.id+'/panier', {
         headers: {

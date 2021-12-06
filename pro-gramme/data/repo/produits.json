@@ -5,7 +5,7 @@
         "nom": "Nutriscore 2000",
         "description": "Complément alimentaire pour sportif.",
         "prix": 12.99,
-        "qte_inventaire": 163,
+        "qte_inventaire": 162,
         "categorie": {
             "id": 1,
             "nom": "Nutritif",
@@ -18,7 +18,7 @@
         "nom": "Tapis de course",
         "description": "Tapis de course pour s'entraîner.",
         "prix": 240.76,
-        "qte_inventaire": 33,
+        "qte_inventaire": 31,
         "categorie": {
             "id": 2,
             "nom": "Equipement sportif",

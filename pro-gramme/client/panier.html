@@ -5,13 +5,14 @@
     <section class="sec-listeProduit">
         <div class="div-titre">
            <h1> Votre selection : </h1>
+            <br>
+                <div class="div-titreListe">
+                    <p id="p-nom"> Nom </p>
+                    <p> Description</p>
+                    <p> Prix </p>
+                    <p> Quantité </p>
+                </div>
 
-            <div class="div-titreListe">
-                <p> Nom </p>
-                <p> Description</p>
-                <p> Prix </p> 
-                <p> Quantité </p>
-            </div> 
         </div>
         
 
@@ -34,7 +35,7 @@
             <p class="p-code"> Avez-vous un code promotionnel ? </p>
             <input class="in-code" type="text">
             <button class="btn-ajouter"> Ajouter </button>
-            <div class="div-affichagePrix"> taille de ce bloc prise au hasard pour l'instant</div>
+            <div class="div-affichagePrix"> Prix : </div>
         </div>
         
         <button onclick="redirectionPaiement()" class="btn-commander"> Commander </button>
