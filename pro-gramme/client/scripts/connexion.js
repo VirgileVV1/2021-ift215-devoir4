@@ -31,7 +31,11 @@ function connexion() {
                 //le serveur n'a pas pu traité la req
                 if (reponse.status == 400) {
                     throw new Error('utilisateur introuvable')
-                } else {
+                } else if (reponse.status == 401) {
+                    throw new Error('Mauvaise combinaison courriel/Mdp')
+                }
+                else
+                {
                     throw new Error(reponse.statusText)
                 }
             }
